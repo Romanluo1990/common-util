@@ -52,6 +52,7 @@ SafeRetryCallUtils.call(runnable, 3);
 
 ### CatchExceptionCallUtils
 异常捕获调用，主要用于拉姆达表达式调用时异常不中断，像跑批任务时  
+example: 
 ```
 List<Integer> numbers = IntStream.range(0, 10).boxed().collect(Collectors.toList());
 Consumer<Integer> printCon = number -> {
