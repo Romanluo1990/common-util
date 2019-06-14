@@ -46,7 +46,7 @@ Runnable runnable = () -> {
     }
     throw new IllegalStateException();
 };
-//重试3次
+//重试3次，第三次成功
 SafeRetryCallUtils.call(runnable, 3);
 ```
 
